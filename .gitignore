@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Streamlit
+.streamlit/
+
+# VS Code
+.vscode/
+
+# Environment variables
+.env
+
+# Datasets and Models (Ignored so we don't push huge files to GitHub)
+data/
+models/
