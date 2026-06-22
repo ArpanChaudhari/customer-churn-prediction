@@ -21,5 +21,5 @@ ENV/
 .env
 
 # Datasets and Models (Ignored so we don't push huge files to GitHub)
-data/
+# data/
 models/
