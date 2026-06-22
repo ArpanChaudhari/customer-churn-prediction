@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 import altair as alt
+import os
 
 st.set_page_config(page_title="Churn Predictor AI", page_icon="🔮", layout="wide")
 
@@ -19,9 +20,10 @@ st.markdown(
 )
 
 try:
-    model = joblib.load("churn_model.pkl")
-    scaler = joblib.load("scaler.pkl")
-    expected_columns = joblib.load("expected_columns.pkl")
+    model_dir = os.path.dirname(__file__)
+    model = joblib.load(os.path.join(model_dir, "churn_model.pkl"))
+    scaler = joblib.load(os.path.join(model_dir, "scaler.pkl"))
+    expected_columns = joblib.load(os.path.join(model_dir, "expected_columns.pkl"))
 except Exception as e:
     st.error(f"Error loading models: {e}")
     st.stop()
