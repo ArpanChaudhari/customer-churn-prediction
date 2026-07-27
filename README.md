@@ -91,8 +91,3 @@ pip install -r requirements.txt
     ```
 3.  Run the cells sequentially to see the data processing, visualization, model training, and evaluation steps.
 
----
-
-## 🔮 Future Scope
-*   **API Deployment:** Deploy the model as a REST API using Flask or FastAPI.
-*   **Interactive Dashboard:** Create a user-friendly frontend dashboard (e.g., using Streamlit) for business stakeholders to input customer data and get real-time churn predictions.
